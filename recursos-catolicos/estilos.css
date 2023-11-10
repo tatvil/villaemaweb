@@ -1,0 +1,128 @@
+/* Variables CSS */
+:root {
+    --color-oscuro: #000;
+    --color-medio: #ccc;
+    --color-claro: #fff;
+    --color-secundario: #b22b2e;
+    --color-secundario-claro: #e1abb2;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    width: 90%;
+    margin: 0 auto;                           
+    background-color: var(--color-claro);
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: var(--color-claro);
+    background-color: var(--color-secundario);
+    font-size: 200%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-secundario-claro);
+    background-color: var(--color-secundario);
+    text-align: center;
+    font-size: 160%;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
+
+h3, h4, h5 {
+    color: var(--color-secundario);
+    font-size: 140%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Estilos generales para la imagen */
+.imagenMisterio 
+  {
+    display: block;
+    margin: auto;
+  }
+  
+  /* Estilos para pantalla de escritorio (ancho mayor a 768px) */
+  @media (min-width: 769px) 
+  {
+    .imagenMisterio {
+      max-width: 30%; /* Ajusta el ancho máximo según tus necesidades. */
+      max-height: auto; /* Para mantener la proporción original. */
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas (menos de 769px) */
+  @media (max-width: 768px) {
+    .imagenMisterio {
+      max-width: 90%; /* Ajusta el ancho máximo según tus necesidades. */
+      max-height: auto; /* Para mantener la proporción original. */
+    }
+  }
+
+/* Estilos de párrafos */
+p {
+    text-align: justify;
+    padding: .5em;
+    text-indent: 1%;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+p:first-letter {
+    color: var(--color-secundario);
+    text-shadow: var(--color-oscuro);
+    text-decoration-style: double;
+    font-size: 150%;
+}
+
+/* Estilos del menú */
+.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-secundario);
+}
+
+.menu li {
+    float: left;
+    display: block;
+    color: var(--color-claro);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+}
+
+.menu li:hover {
+    background-color: var(--color-secundario-claro);
+}
+
+.menu .active {
+    background-color: var(--color-secundario-claro);
+    color: var(--color-secundario);
+}
+
+.misterios
+{
+    margin-top: 300px;
+}

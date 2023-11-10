@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.dltk.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>D:/Trabajo/Cursos/DAMDisenoAplicacionesMultiplataforma/Entornos de desarrollo/ComandosGit/.metadata/.plugins/org.eclipse.php.core/__language__/7968b58f</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>De GitHub.com</title>
+</head>
+<body>
+<h2>…or create a new repository on the command line</h2>
+<br>echo "# ComandosGit" >> README.md
+<br>git init
+<br>git add README.md
+<br>git commit -m "first commit"
+<br>git branch -M main
+<br>git remote add origin https://github.com/tatvil/ComandosGit.git
+<br>git push -u origin main
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Variables CSS */
+:root {
+    --color-oscuro: #1a3668;
+    --color-medio: #0034a4;
+    --color-claro: #a4d7f4;
+    --color-secundario: orange;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    width: 90%;
+    margin: 0 auto;                           
+    background-color: var(--color-claro);
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: var(--color-claro);
+    background-color: var(--color-oscuro);
+    font-size: 160%;
+    padding: 1% 0; 
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-claro);
+    background-color: var(--color-oscuro);
+    text-align: center;
+    font-size: 140%;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+h3, h4, h5 {
+    color: var(--color-medio);
+    font-size: 120%;
+    padding: 1% 0;
+    text-align: center;
+}
+  
+
+/* Estilos de párrafos */
+p {
+    text-align: justify;
+    padding: 1%;
+    text-indent: 1%;
+    margin-left: 1%;
+}
+
+/* Estilos del menú */
+.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.menu {
+    text-align: center; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 1%;
+    background-color: var(--color-oscuro);
+}
+
+.menu li {
+    display: inline;
+    color: var(--color-claro);
+    padding: 14px;
+}
+
+
+
+.menu li:hover {
+    color: var(--color-medio);
+    background-color: var(--color-claro);
+    border-radius: 10px;
+}
+
+.menu .active {
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+    border-radius: 10px;
+}
+
+/* Estilos para pantallas más pequeñas (menos de 769px) */
+@media (max-width: 768px) 
+{
+    .cabecera {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        z-index: 500; 
+    }
+
+    h1 {
+        font-size: 120%;
+        padding: 1%;
+    }
+    
+    h2 {
+        font-size: 110%;
+        padding: 1%;
+    }
+    
+    h3, h4, h5 {
+        font-size: 105%;
+        padding: 0%;
+    }
+
+    .cabecera {
+        padding: 0px; /* Ajusta el relleno de la cabecera */
+    }
+
+    .menu li {
+        padding-right: 0%; /* Ajusta el relleno de los elementos del menú */
+        font-size: 80%;
+    }
+
+}

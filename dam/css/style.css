@@ -1,0 +1,147 @@
+* {
+  font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  --color-oscuro:#0054a4;
+  --color-medio: #007dc3;
+  --color-claro: #a4d7f4;
+  --color-secundario: #e11b22;
+  --color-secundario-claro: #e1abb2;
+}
+
+.menu-principal{
+  position: fixed;  
+  width: 100%;
+  list-style-type: none;
+  top:100px;
+  background-color: var(--color-oscuro);
+}
+
+.menu-principal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-oscuro);
+}
+
+.menu-principal li {
+	display: inline;
+  	float: left;
+}
+
+.menu-principal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: var(--color-oscuro);
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu-principal li a:hover {
+  background-color: var(--color-medio);
+}
+
+.active {
+	background-color: var(--color-secundario);
+	border-radius: 10px;
+}
+
+h1 {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    padding: 2%;
+    text-shadow: #000000;
+    text-transform: uppercase;
+}
+
+
+h2 {
+  background-color: var(--color-medio);
+  color: var(--color-claro);
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  padding: 1%;
+  margin-top: 1%;
+  }
+
+h3 {
+    background-color: var(--color-claro);
+    color: var(--color-medio);
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    padding: 1%;
+    }
+
+th {
+  background-color: var(--color-claro);
+}
+
+td {
+  border-right: 1px solid var(--color-claro);
+  text-align: center;
+}
+
+ul, ol{
+  text-align: justify;
+  padding: 1%;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  padding: 2px;
+  }
+
+form {
+  text-align: center;
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+}
+
+input {
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  width: 50%;
+  border: 1px solid var(--color-medio);
+}
+
+input:focus {
+  background-color: var(--color-claro);
+  border: 1px solid var(--color-medio);
+}  
+
+.boton {
+  background-color: var(--color-medio);
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+  width: 10%;
+  border: none;
+}
+
+.boton:hover {
+  color: var(--color-medio);
+  background-color: var(--color-oscuro);
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.grupo
+  {
+    padding: 1%;
+  }

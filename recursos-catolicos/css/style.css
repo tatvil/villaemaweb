@@ -1,0 +1,194 @@
+/* Variables CSS */
+:root {
+    --color-oscuro: #000;
+    --color-medio: #ccc;
+    --color-claro: #fff;
+    --color-secundario: #b22b2e;
+    --color-secundario-claro: #e1abb2;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    width: 90%;
+    margin: 0 auto;                           
+    background-color: var(--color-claro);
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: var(--color-claro);
+    background-color: var(--color-secundario);
+    font-size: 200%;
+    padding: 1% 0;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-secundario-claro);
+    background-color: var(--color-secundario);
+    text-align: center;
+    font-size: 160%;
+    padding: 1% 0;
+    text-transform: uppercase;
+}
+
+h3, h4, h5 {
+    color: var(--color-secundario);
+    font-size: 140%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Estilos generales para la imagen */
+.imagenMisterio 
+  {
+    display: block;
+    margin: auto;
+  }
+  
+
+/* Estilos de párrafos */
+p {
+    text-align: justify;
+    padding: .5em;
+    text-indent: 1%;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+p:first-letter {
+    color: var(--color-secundario);
+    text-shadow: var(--color-oscuro);
+    text-decoration-style: double;
+    font-size: 150%;
+}
+
+/* Estilos del menú */
+.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    top: 120px;
+    background-color: var(--color-secundario);
+    text-align: center; /* Añade esta línea para centrar el contenido */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--color-secundario);
+    display: inline; /* Cambia 'inline-block' a 'inline' para que los elementos estén en línea horizontalmente */
+  }
+  
+  .menu li {
+    display: inline-block; 
+ /*   margin-right: .5%; /* Agrega margen derecho para separar los elementos del menú */
+    background-color: var(--color-secundario);
+    color: var(--color-claro);
+    padding: 1%;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0; /* Elimina el margen derecho en el último elemento del menú para evitar un espacio adicional */
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+  }
+  
+  .menu li:hover {
+    background-color: var(--color-secundario-claro);
+    border-radius: 10px;
+    padding: 1%; /* Aumenta el padding para un poco más de espacio */
+  }
+
+  .menu a:hover {
+    background-color: var(--color-secundario-claro);
+    border-radius: 10px;
+    padding: 1%; /* Aumenta el padding para un poco más de espacio */
+  }
+  
+  .menu .active {
+    background-color: var(--color-secundario-claro);
+    color: var(--color-secundario);
+    border-radius: 10px;
+    padding: 1%;
+  }
+
+.misterios
+{
+    margin-top: 250px;
+}
+
+/* Estilos para pantalla de escritorio (ancho mayor a 768px) */
+@media (min-width: 769px) 
+{
+  .imagenMisterio {
+    max-width: 30%; /* Ajusta el ancho máximo según tus necesidades. */
+    max-height: auto; /* Para mantener la proporción original. */
+  }
+}
+
+/* Estilos para pantallas más pequeñas (menos de 769px) */
+@media (max-width: 768px) {
+    .cabecera {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        z-index: 500; 
+    }
+
+  .imagenMisterio {
+    max-width: 90%; /* Ajusta el ancho máximo según tus necesidades. */
+    max-height: auto; /* Para mantener la proporción original. */
+  }
+  h1 {
+      font-size: 120%;
+      padding: 1%;
+  }
+  
+  h2 {
+      font-size: 110%;
+      padding: 1%;
+  }
+  
+  h3, h4, h5 {
+    font-size: 105%;
+    padding: 0%;
+  }
+
+  .cabecera {
+    padding: 0px; /* Ajusta el relleno de la cabecera */
+}
+
+.menu li {
+    padding-right: 0%; /* Ajusta el relleno de los elementos del menú */
+    font-size: 80%;
+}
+.misterios
+{
+    margin-top: 100px;
+}
+
+}
