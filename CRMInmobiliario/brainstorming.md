@@ -1,9 +1,14 @@
-1. *Plataforma Integral para Inmobiliarias:*
-   - *Módulo de Gestión de Propiedades:* Detalles de ubicación, características, historial de ventas y contratos.
-   - *Tablero de Análisis de Datos:* Visualización de tendencias, datos de mercado y análisis estratégico.
-   - *Herramienta de Evaluación de Riesgos:* Algoritmo para evaluar la viabilidad y riesgos de inversiones.
-   - *Generador de Informes Automatizado:* Simplificación de la documentación y presentación de información.
-   - *Sistema de Reservas en Línea:* Facilita la programación eficiente de visitas a propiedades.
+# Plataforma Integral para Inmobiliarias:
+   - ## Módulo de Gestión de Propiedades:
+    Detalles de ubicación, características, historial de ventas y contratos.
+   - ## Tablero de Análisis de Datos:
+    Visualización de tendencias, datos de mercado y análisis estratégico.
+   - ## Herramienta de Evaluación de Riesgos:
+    Algoritmo para evaluar la viabilidad y riesgos de inversiones.
+   - ## Generador de Informes Automatizado:
+    Simplificación de la documentación y presentación de información.
+   - ## Sistema de Reservas en Línea:
+    Facilita la programación eficiente de visitas a propiedades.
 
 2. *Optimización de Marketing:*
    - *Herramienta de Marketing Automatizado:* Automatiza la creación y distribución de contenido de marketing.
