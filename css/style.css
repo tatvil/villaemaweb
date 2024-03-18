@@ -1,113 +1,437 @@
-* {
-  font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
-  padding: 0;
-  --color-oscuro:#0054a4;
-  --color-medio: #007dc3;
-  --color-claro: #a4d7f4;
-  --color-secundario: #e11b22;
-  --color-secundario-claro: #e1abb2;
+/* Importa la fuente */
+@font-face {
+    font-family: 'Gotham'; /* Nombre que le das a tu fuente */
+    src: url('fonts/gotham/gothammedium.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+@font-face {
+    font-family: "Antropos"; /* Nombre que le das a tu fuente */
+    src: url("fonts/antropos/antrf.ttf") format("truetype"); /* Ruta a tu archivo de fuente */
 }
 
-.menu {
-  position: fixed;
-  width: 100%;
-  list-style-type: none;
-  top: 75px;
-  background-color: var(--color-oscuro);
-  text-align: center; /* Añade esta línea para centrar el contenido */
-  z-index: 1;
-}
-
-.menu ul {
+*
+{
+    font-family: 'Gotham', 'Antropos', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-oscuro:#0054a4;
+    --color-medio: #007dc3;
+    --color-claro: #a4d7f4;
+    --color-secundario: #ff9900;
+    --color-secundario-claro: #ffc24a;
+    }
+ 
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: var(--color-oscuro);
-  display: inline; /* Cambia 'inline-block' a 'inline' para que los elementos estén en línea horizontalmente */
 }
 
-.menu li {
-  display: inline-block; 
-  margin-right: 10px; /* Agrega margen derecho para separar los elementos del menú */
+li {
+  float: left;
 }
 
-.menu li:last-child {
-  margin-right: 0; /* Elimina el margen derecho en el último elemento del menú para evitar un espacio adicional */
-}
-
-.menu li a {
+li  a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: var(--color-oscuro);
 }
 
-.menu li a:hover {
-  background-color: var(--color-medio);
+li a:hover {
+  color: var(--color-medio);
 }
-
+ 
 .active {
 	background-color: var(--color-secundario);
 	border-radius: 10px;
+}  
+
+    
+.cabecera
+    {
+        font-size:1.2em;
+        padding: 5px;
+        text-align: center;
+        color: var(--color-claro);
+        text-decoration: none;
+        text-transform:none;
+                position: relative; /* Asegura que los elementos posicionados dentro de este div se basen en él */
+
+    }
+
+.cabecera img {
+        width: 100%;
+        height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
+        max-height: 150px;
+    }    
+
+.cabecera h1,
+.cabecera h2,
+.cabecera h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Asegura que el texto esté por encima de la imagen */       
+    }
+    
+.cabecera h1 {
+        font-size: 32px; /* Tamaño de fuente del título */
+        color: var(--color-claro); /* Color del título */
+        top: 30%; /* Ajusta la posición vertical del título */
+    }
+    
+.cabecera h2 {
+        font-size: 20px; /* Tamaño de fuente del subtítulo */
+        color: var(--color-claro); /* Color del subtítulo */
+        top: 60%; /* Ajusta la posición vertical del subtítulo */
+    }
+
+.cabecera h3 {
+        font-size: 16px; /* Tamaño de fuente del subtítulo */
+        color: var(--color-claro); /* Color del subtítulo */
+        top: 80%; /* Ajusta la posición vertical del subtítulo */
+        left:80%;
+
+    }
+    
+.cuerpo
+	{
+	 	display: flex;
+  		flex-direction: row;
+		flex-wrap: wrap;  		
+  		justify-content: center;
+  		align-content: strech;
+  		height: 550px;
+  		
+        padding: 2.5px;
+        text-align: center;
+        color: var(--color-oscuro);
+        background-color: white;
+        text-decoration: none;
+        border: 5px solid var(--color-oscuro);
+	}   
+	
+.columna
+{
+	border: 2.5px solid var(--color-oscuro);
+	border-radius: 10px;
+	 padding: 1%;
+	margin: 1%;
+	width: 25%;
+} 
+
+.tabla
+{
+	width: 100%;
+	height:100%
 }
 
-h1 {
-  position: fixed;
-  width: 100%;
-    background-color: var(--color-oscuro);
-    color: var(--color-claro);
-    font-size: 40px;
-    display: block;
-    text-align: center;
-    padding: 2%;
-    text-shadow: #000000;
-    text-transform: uppercase;
+.lista
+{
+	text-align:center;
+	border-bottom: 1px solid var(--color-claro);
+	border-left: 1px solid var(--color-claro);
+	padding: 2.5px;
 }
 
+.calendario
+{
+	text-align:center;
+	padding: 10px;
+}
 
-h2 {
-  background-color: var(--color-medio);
-  color: var(--color-claro);
-  font-size: 30px;
-  display: block;
-  text-align: center;
-  padding: 1%;
-  margin-top: 1%;
-  }
+.hoy
+{
+	border-radius: 50px;
+	background-color: var(--color-oscuro);	color: var(--color-claro);
+}
 
-h3 {
-    background-color: var(--color-claro);
-    color: var(--color-medio);
-    font-size: 25px;
-    display: block;
-    text-align: center;
-    padding: 1%;
+.header 
+    {
+        padding: 2%;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+  
+.buscar 
+    {
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
 
-p {
-  text-align: justify; 
-  width: 80%;
-  margin: auto;
-  padding: 2px;
+
+#subtitulo
+    {
+        font-size: 1em;
+    }
+#calendario
+    {
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+.centrar
+	{
+	text-align: center;
+	}
+    
+    
+.parrafo {
+        background-color:var(--color-claro);
+        color:var(--color-oscuro);
+        border:5px solid var(--color-oscuro);
+        padding: 5%;
+        font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+      }
+
+.subtitulo
+    {
+        font-size:0.8em;
+        padding: 5px;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: none;
+    }
+  
+.container 
+    {
+        position:absolute;
+        width: 100%;
+        background-color: white;
+        height: 80%;
+        align-items:  center;
+    }
+    
+.elemento
+    {
+        position: relative;
+        background-color: var(--color-oscuro);
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+        margin: 3%;
+        border-radius: 10px;
+        box-shadow: 5px 5px var(--color-claro);
+        display: inline-block;
+        max-width: 300px;
+    }
+.elemento a    {
+        color: var(--color-claro);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+footer
+    {
+        position:fixed; 
+        bottom: 0;
+        width:98%;
+    padding: 1%;
+    text-align: center;
+      color:var(--color-claro);
+      background-color: var(--color-oscuro);
+    }
+a
+    {color: var(--color-medio);}
+
+/* Formularios */
+
+.formulario
+    {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    
+.boton
+    {
+    background-color: var(--color-oscuro); 
+    border: none;
+    color: var(--color-claro);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2%;
+    border-radius: 12px;
+    }
+    
+.boton:hover
+    {
+        color: var(--color-medio);
+    }
+
+.boton-buscar
+    {
+    background-color: var(--color-oscuro); 
+    border: none;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;  
+    font-size: 16px;
+    border-radius: 12px;
+    display: inline-block;
+    }
+    
+.registro
+    {
+        width: 100%;
+        display: inline-block;
+        position:absolute;
+        padding: 3%
+    }
+    
+.etiqueta
+    {
+        position:relative;
+        width:20%;
+        max-width: 300px;
+        margin: 5px;
+    }
+    
+.campo-200
+    {
+        width:200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1.5px solid var(--color-oscuro);
+        border-radius: 10px;
+        position:relative;  
+    }
+    
+.campo-2
+	{
+        width:18%;
+        padding: 1%;
+        padding-left: 40px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+.campo-4
+	{
+        width:34%;
+        padding: 1%;
+        margin: 1%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+.campo-8
+	{
+        width:74%;
+        padding: 1%;
+        margin: 1%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+.dato
+    {
+        display: inline-block;
+        padding: 3%;
+    }
+.grupo-datos
+    {
+        display: inline-block;
+/*        border: solid 1.5px var(--color-oscuro);  */
+        border-radius: 10px;
+        width:90%;
+        margin:1%;
+        align-content: center;
+    }
+
+  /* Create a custom checkbox */
+.casilla {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-claro);
+    border: var(--color-oscuro);
+  }
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-oscuro);
+    padding: 10px;
+    font-size: 20px;
+    border: var(--color-oscuro) 10px solid;
+  }
+  
+.grid-container > div {
+    background-color: var(--color-claro);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 50px;
   }
 
-  .cuerpo {
-    position: relative;
-    top: 175px;
+.grid-container > div > table
+  {
+    margin: 0 auto;
+  }
+
+.autor
+  {
+      text-align:right;
+  }
+
+select 
+{
+    background: var(--color-claro);
+    border: var(--color-oscuro) 1px;
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 5px;
+    width: 200px;
+ }
+
+input
+{
+	width: 100%;
 }
 
-ol {
-  width: 80%;
-  
-}
+ input [type='date'] 
+    {
+    margin: 8px 0;
+    background: var(--color-claro);
+    border: var(--color-oscuro) 1px;
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 5px;
+    width: 200px;
+    }
 
-ol li {
-  list-style-type: decimal;
-  text-align: justify;
-  padding-left: 20%;
-}
+input [type='number'] 
+    {
+    margin: 8px 0;
+    background: var(--color-claro);
+    border: var(--color-oscuro) 1px;
+    font-size:100px;
+    height: 100px;
+    padding: 5px;
+    width: 200px;
+    }
+
+input[type=text]:focus 
+    {
+        border: 3px solid var(--color-oscuro);
+        background-color: var(--color-claro);
+      }
