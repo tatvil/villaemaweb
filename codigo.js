@@ -58,18 +58,33 @@ function inicializarVariables() {
 
     subtitulo = document.getElementById("subtitulo");
     fechasubtitulo = document.getElementById("fecha");
+    menu1 = document.getElementById("menu1");
+    menu2 = document.getElementById("menu2");
+    menu3 = document.getElementById("menu3");
+    menu4 = document.getElementById("menu4");
+    menu5 = document.getElementById("menu5");
     annoFooter = document.getElementById("annoFooter");
 
     fechasubtitulo.textContent = semana[diaSemana] + ", " + diaMes + " de " + meses[mesActual] + " de " + annoActual;
+    menu1.innerHTML = "<a href='index.html'>Inicio</a>";
+    menu2.innerHTML = "<a href='sobre-mi.html'>Sobre mi</a>";
+    menu3.innerHTML = "<a href='proyectos.html'>Proyectos</a>";
+    menu4.innerHTML = "<a href='habilidades.html'>Habilidades</a>";
+    menu5.innerHTML = "<a href='contacto.html'>Contacto</a>";
+
     annoFooter.textContent = annoActual;
     crearMes(mesActual, annoActual);
+
 }
 
 function setListeners() {
     // Agrega aquí tus listeners
 }
 
+
+
 window.addEventListener("load", () => {
     inicializarVariables();
+    crearMenu();
     setListeners();
 });

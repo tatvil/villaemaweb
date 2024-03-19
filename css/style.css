@@ -20,7 +20,7 @@
     --color-secundario-claro: #ffc24a;
     }
 
-ul{
+menu ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,11 +28,11 @@ ul{
   background-color: var(--color-oscuro);
 }
 
-li {
+menu li {
   float: left;
 }
 
-li  a {
+menu li  a {
   display: block;
   color: white;
   text-align: center;
@@ -40,7 +40,7 @@ li  a {
   text-decoration: none;
 }
 
-li a:hover {
+menu li a:hover {
   color: var(--color-medio);
 }
  
@@ -95,7 +95,36 @@ li a:hover {
         top: 80%; /* Ajusta la posición vertical del subtítulo */
         left:80%;
     }
-    
+
+.menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--color-oscuro);
+      }
+      
+.menu li {
+        float: left;
+      }
+
+.menu li  a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+.menu li a:hover {
+        color: var(--color-medio);
+      }
+       
+.menu .active {
+          background-color: var(--color-secundario);
+          border-radius: 10px;
+      }  
+
 .cuerpo
 	{
         display: flex;
