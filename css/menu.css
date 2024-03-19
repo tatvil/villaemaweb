@@ -1,0 +1,50 @@
+/* Importa la fuente */
+@font-face {
+    font-family: 'Gotham'; /* Nombre que le das a tu fuente */
+    src: url('../fonts/gotham/gothammedium.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+@font-face {
+    font-family: "Antropos"; /* Nombre que le das a tu fuente */
+    src: url("../fonts/antropos/antrf.ttf") format("truetype"); /* Ruta a tu archivo de fuente */
+}
+
+*
+{
+    font-family: 'Gotham', 'Antropos', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-oscuro:#0054a4;
+    --color-medio: #007dc3;
+    --color-claro: #a4d7f4;
+    --color-secundario: #ff9900;
+    --color-secundario-claro: #ffc24a;
+    }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-oscuro);
+}
+
+li {
+  float: left;
+}
+
+li  a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: var(--color-medio);
+}
+ 
+.active {
+	background-color: var(--color-secundario);
+	border-radius: 10px;
+}  
