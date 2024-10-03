@@ -4,18 +4,12 @@
     src: url('../fonts/gotham/gothammedium.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
 }
 
-@font-face {
-    font-family: "Antropos"; /* Nombre que le das a tu fuente */
-    src: url("../fonts/antropos/antrf.ttf") format("truetype"); /* Ruta a tu archivo de fuente */
-}
-
 /* Variables de color */
 :root {
-    --color-oscuro: #0054a4;
-    --color-medio: #007dc3;
-    --color-claro: #a4d7f4;
-    --color-secundario: #ff9900;
-    --color-secundario-claro: #ffc24a;
+    --color-fondo: #f4f4f4; /* Color de fondo claro */
+    --color-primario: #007dc3; /* Color principal */
+    --color-secundario: #333; /* Texto oscuro */
+    --color-acento: #ff9900; /* Color de acento */
 }
 
 /* Estilos generales */
@@ -23,20 +17,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gotham', 'Antropos', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gotham', sans-serif; /* Usamos solo la fuente Gotham */
 }
 
 body {
-    background-color: var(--color-claro);
-    color: var(--color-oscuro);
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    line-height: 1.6; /* Mejoramos la legibilidad */
+}
+
+h1, h2, h6 {
+    color: var(--color-primario);
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
 }
 
 /* Estilo de la cabecera */
 .cabecera {
-    background-color: var(--color-oscuro);
-    color: var(--color-claro);
+    background-color: var(--color-primario);
+    color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 .cabecera img {
@@ -47,38 +52,27 @@ body {
 
 .cabecera h1,
 .cabecera h2,
-.cabecera h3{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Asegura que el texto esté por encima de la imagen */  
-        color: var(--color-claro);     
-    }
+.cabecera h3 {
+    margin: 0;
+}
 
 .cabecera h1 {
-        font-size: 32px;
-        color: var(--color-claro);
-        top: 10%;
-      }
-      
+    font-size: 2.5rem;
+}
+
 .cabecera h2 {
-        font-size: 20px;
-        color: var(--color-claro);
-        top: 15%;
-      }    
+    font-size: 1.5rem;
+}
 
 .cabecera h3 {
-        font-size: 16px; /* Tamaño de fuente del subtítulo */
-        color: var(--color-claro); /* Color del subtítulo */
-        top: 20%; /* Ajusta la posición vertical del subtítulo */
-        left:80%;
-    }
+    font-size: 1rem;
+    opacity: 0.8; /* Añadimos un poco de transparencia */
+}
 
 /* Estilo del menú */
 .menu {
-    background-color: var(--color-oscuro);
-    color: var(--color-claro);
+    background-color: var(--color-primario);
+    color: #fff;
     text-align: center;
     padding: 10px 0;
 }
@@ -86,7 +80,6 @@ body {
 .menu ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .menu ul li {
@@ -95,28 +88,57 @@ body {
 }
 
 .menu ul li a {
-    color: var(--color-claro); /* Color del enlace */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s; /* Transición para un efecto suave */
 }
 
 .menu ul li a:hover {
-    text-decoration: underline;
+    color: var(--color-acento); /* Cambiamos el color al pasar el mouse */
 }
 
 /* Estilo del cuerpo */
 .cuerpo {
-    margin-top: 50px; /* Margen superior para evitar que el contenido se superponga al menú */
+    max-width: 800px; /* Limitar el ancho del contenido */
+    margin: 50px auto; /* Centramos el cuerpo */
     padding: 20px;
+    background: #fff; /* Fondo blanco para el cuerpo */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilo del pie de página */
 footer {
-    background-color: var(--color-oscuro);
-    color: var(--color-claro);
+    background-color: var(--color-primario);
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
+
+footer #copyright {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el copyright */
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.accordion-button {
+    background-color: var(--color-primario);
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-primario);
+    color: white;
+}
+.card {
+    margin-bottom: 15px;
+}
+.card-header {
+    cursor: pointer;
+}
+

@@ -6,90 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tatiana Villa</title>
-    <link rel="stylesheet" href="css/style.css"> 
-	<script type="text/javascript" src="codigo.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Curriculum Vitae de Tatiana Villa, desarrolladora y diseñadora web.">
+    <meta name="keywords" content="Tatiana Villa, curriculum, desarrolladora web, diseñadora web, tecnología, DAM">
+    <meta name="author" content="Tatiana Villa">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="codigo.js"></script>
 </head>
 
 <body>
-    <div class="cabecera">
-		<img src="img/cabecera.jpg" alt="Logo de CRM Inmobiliario">
-        <h1>Tatiana Villa</h1>
-        <h2 id="subtitulo">Desarrollador de aplicaciones informáticas</h2>
-        <h3 id="fecha">fecha</h3> 
-	</div>
-    
-    <div class="menu"> 
-        <ul>
-            <li><a id="menu1" href='index.html'>Inicio</a></li>
-            <li><a id="menu2" href="sobre-mi.html">Sobre mi</a></li>
-            <li><a id="menu3" href="proyectos.html">Proyectos</a></li>
-            <li><a id="menu4" href="habilidades.html">Habilidades</a></li>
-            <li><a id="menu5" href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-
-    <div class="cuerpo">
-        <div class="parrafo">
-            <h3> 👋 Hola, mi nombre es Tatiana</h3>
-            <p>Esta página web esta realizada integramente con codigo: PHP, JavaScript, html, y CSS</p>
-            <p>Mi intencion es que veas mi portfolio, para que estés interesado en contratar mis servicios</p>
-            <p>Soy conciente de lo mucho que necesito mejorar esta pagina. Voy despacito, mejorando la web a ratitos, cuando no tengo que prestar servicios a terceros :)</p>
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1>Tatiana Villa</h1>
+            <h2><small>Desarrollador de aplicaciones Multiplataforma</small></h2>
+            <div>
+                <a href="mailto:tatiana@villaema.es"><i class="fas fa-envelope"></i> tatiana@villaema.es</a> | 
+                <a href="https://github.com/tatvil"><i class="fab fa-github"></i> GitHub</a> | 
+                <a href="https://www.linkedin.com/in/tatvil/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
 
-        <div class="parrafo">
-            <h3>Sobre mi</h3>
+        <div class="menu">
             <ul>
-                <li>Desarrollo de aplicaciones informáticas</li>
-                <li>Administrador de sistemas Unix</li>
-                <li>Programación orientada a objetos con Java</li>
-                <li>Desarrollo de aplicaciones WEB FrontEnd y BackEnd</li>
-                <li>Robótica con Arduino</li>
-                <li>Organización y proyectos de energía solar fotovoltaica</li>
-                <li>Administración y diseño de redes departamentales</li>
-                <li>Empresa e iniciativa emprendedora</li>
-                <li>DevOps</li>
-                <li>Wordpress, Photoshop</li>
+                <li><a id="menu1" href='index.html'>Inicio</a></li>
+                <li><a id="menu2" href="sobre-mi.html">Sobre mi</a></li>
+                <li><a id="menu3" href="proyectos.html">Proyectos</a></li>
+                <li><a id="menu4" href="habilidades.html">Habilidades</a></li>
+                <li><a id="menu5" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-        <div class="parrafo">
-            <h3>Proyectos</h3>
-            <p>👨‍💻 Puedes encontrar mis proyectos en la pestaña repositorios de <a href="https://github.com/tatvil?tab=repositories">Github</a></p>
+        <div class="card">
+            <h6>Página realizada íntegramente con código: PHP, JavaScript, HTML y CSS</h6>
         </div>
 
-        <div class="parrafo">
-            <h3>Habilidades</h3>
-            <li>Desarrollo de aplicaciones informáticas</li>
-            <li>Administrador de sistemas Unix</li>
-            <li>Programación orientada a objetos con Java</li>
-            <li>Desarrollo de aplicaciones WEB FrontEnd y BackEnd</li>
-            <li>Robótica con Arduino</li>
-            <li>Organización y proyectos de energía solar fotovoltaica</li>
-            <li>Administración y diseño de redes departamentales</li>
-            <li>Empresa e iniciativa emprendedora</li>
-            <li>DevOps</li>
-            <li>Wordpress, Photoshop</li>
-        </div>
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Sobre Mi <i class="fas fa-graduation-cap"></i>
+                        </button>
+                    </h5>
+                </div>
 
-        <div class="parrafo">
-            <h3>Conoce mi experiencia y formación en LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/tatvil/?tab">LinkedIn</a>
-        </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Soy Tatiana, una desarrolladora de aplicaciones informáticas con experiencia en la creación y gestión de proyectos tecnológicos. Tengo un sólido conocimiento en programación orientada a objetos con Java y desarrollo web utilizando PHP, HTML, CSS y JavaScript. También soy competente en WordPress y en la administración de sistemas Unix. Me dedico a aprender y mejorar mis habilidades constantemente, buscando siempre ofrecer soluciones efectivas e innovadoras.</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="parrafo">
-            <h3><a href="contacto.html">Contacto</a></h3>
-            <p>📫 Puedes contactar conmigo mediante correo electrónico <a href="mailto:tatiana@villaema.es">tatiana@villaema.es</a></p>
-            <p>Puedes dejarme un mensaje en mi <a href="https://www.linkedin.com/in/tatvil/?tab">LinkedIn</a></p>
-            <p>Deja tus datos en el formulario de <a href="contacto.html">contacto</a></p>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Proyectos <i class="fas fa-project-diagram"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>He trabajado en una variedad de proyectos que reflejan mis habilidades en desarrollo de aplicaciones informáticas y web. Puedes explorar mis trabajos en la pestaña de repositorios de mi GitHub. Mis proyectos incluyen:</p>
+                        <ul>
+                            <li><b>Desarrollo de aplicaciones:</b> He creado aplicaciones informáticas que ayudan a optimizar procesos y mejorar la experiencia del usuario.</li>
+                            <li><b>Proyectos web:</b> He desarrollado sitios web dinámicos y responsivos utilizando PHP, HTML, CSS y JavaScript, asegurando una experiencia de usuario fluida.</li>
+                            <li><b>WordPress:</b> He creado y gestionado sitios web en WordPress, personalizando temas y plugins para satisfacer las necesidades del cliente.</li>
+                            <li><b>Robótica:</b> He trabajado en proyectos de robótica con Arduino, aplicando mis conocimientos en programación y electrónica.</li>
+                            <li><b>Energía solar:</b> He organizado y gestionado proyectos relacionados con la energía solar fotovoltaica, combinando mis habilidades técnicas con la sostenibilidad.</li>
+                            <li><b>Redes:</b> He diseñado y administrado redes departamentales, asegurando una conectividad eficiente y segura.</li>
+                            <li><b>DevOps:</b> He implementado prácticas de DevOps para mejorar la colaboración y la eficiencia en el desarrollo de software.</li>
+                        </ul>
+                        <p>Mi enfoque siempre está en crear soluciones efectivas que se alineen con las necesidades de los usuarios y del mercado.</p>
+                        <p>Más información en la pestaña de <a href="proyectos.html">Proyectos</a>.</p>
+                        <p>👨‍💻 Puedes encontrar mis proyectos en la pestaña de repositorios de <a href="https://github.com/tatvil?tab=repositories">GitHub</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Habilidades <i class="fas fa-cogs"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>Desarrollo de aplicaciones informáticas</li>
+                            <li>Administrador de sistemas Unix</li>
+                            <li>Programación orientada a objetos con Java</li>
+                            <li>Desarrollo de aplicaciones WEB FrontEnd y BackEnd</li>
+                            <li>Robótica con Arduino</li>
+                            <li>Organización y proyectos de energía solar fotovoltaica</li>
+                            <li>Administración y diseño de redes departamentales</li>
+                            <li>Empresa e iniciativa emprendedora</li>
+                            <li>DevOps</li>
+                            <li>WordPress, Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Contacto <i class="fas fa-envelope"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>📫 Puedes contactar conmigo mediante correo electrónico <a href="mailto:tatiana@villaema.es">tatiana@villaema.es</a></p>
+                        <p>Puedes dejarme un mensaje en mi <a href="https://www.linkedin.com/in/tatvil/">LinkedIn</a></p>
+                        <p>Deja tus datos en el formulario de <a href="contacto.html">contacto</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-<footer>
-    <div class="footer">
-        <span id="copyright">
-			&copy; <span id="annoFooter"> </span>Tatiana Villa Ema
-		</span>
-    </div>
-</footer>
+    <footer>
+        <div class="footer">
+            <span id="copyright">
+                &copy; <span id="annoFooter"></span> Tatiana Villa Ema
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        // Actualizar el año en el footer
+        document.getElementById('annoFooter').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

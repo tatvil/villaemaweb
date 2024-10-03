@@ -4,55 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tatiana Villa - Habilidades</title>
+    <title>Tatiana Villa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Curriculum Vitae de Tatiana Villa, desarrolladora y diseñadora web.">
+    <meta name="keywords" content="Tatiana Villa, curriculum, desarrolladora web, diseñadora web, tecnología, DAM">
+    <meta name="author" content="Tatiana Villa">
+
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="codigo.js"></script>
 </head>
-
 <body>
-    <div class="cabecera">
-        <img src="img/cabecera.jpg" alt="Logo de CRM Inmobiliario">
-        <h1>Tatiana Villa</h1>
-        <h2 id="subtitulo">Desarrollador de aplicaciones informáticas</h2>
-        <h3 id="fecha">fecha</h3>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a id="menu1" href='index.html'>Inicio</a></li>
-            <li><a id="menu2" href="sobre-mi.html">Sobre mi</a></li>
-            <li><a id="menu3" href="proyectos.html">Proyectos</a></li>
-            <li><a id="menu4" href="habilidades.html">Habilidades</a></li>
-            <li><a id="menu5" href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="cuerpo">
-        <div class="parrafo">
-            <h3>👀 ¿Que se hacer?</h3>
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1>Tatiana Villa</h1>
+            <h2><small>Desarrollador de aplicaciones Multiplataforma</small></h2>
+            <div>
+                <a href="mailto:tatiana@villaema.es"><i class="fas fa-envelope"></i> tatiana@villaema.es</a> | 
+                <a href="https://github.com/tatvil"><i class="fab fa-github"></i> GitHub</a> | 
+                <a href="https://www.linkedin.com/in/tatvil/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="menu">
             <ul>
-                <li>Diseño y desarrollo de paginas WEB FrontEnd y BackEnd (PHP, HTML, CSS, JavaScript, XML, JSON)</li>
-                <li>Administrador de Sistemas Unix (HPUX, Linux, Debian, Ubuntu, ... ), utilizo mucho la Shell Script para automatización de tareas.</li>
-                <li>Programación Orientada a objetos con Java</li>
-                <li>JavaDoc, UML, Desarrollo de interfaces con Java Swing</li>
-                <li>Bases de datos: Diseño y normalización de Bases de datos, sentencias SQL</li>
-                <li>Sistemas de Gestion Empresarial - ERPs y CRMs</li>
-                <li>Empresa e iniciativa emprendedora</li>
-                <li>DevOps</li>
-                <li>Robótica con arduino</li>
-                <li>Organización y proyectos de de energia solar fotovoltaica</li>
-                <li>Administración y diseño de redes departamentales</li>
-                <li>Otras herramientas: Wordpress, Photoshop</li>
-                <li>👨‍💻 Puedes encontrar mis proyectos en la pestaña repositorios de <a href="https://github.com/tatvil?tab=repositories">Github</a></li>
+                <li><a id="menu1" href='index.html'>Inicio</a></li>
+                <li><a id="menu2" href="sobre-mi.html">Sobre mi</a></li>
+                <li><a id="menu3" href="proyectos.html">Proyectos</a></li>
+                <li><a id="menu4" href="habilidades.html">Habilidades</a></li>
+                <li><a id="menu5" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-        <div class="parrafo">
-            <h3>🌱 Actualmente estoy aprendiendo</h3>
-            <p>Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
-            <p>Programacion de Servicios y procesos(comunicacion de procesos cliente servidor, REST)</p>
-            <p>Acceso a datos desde Java (Bases de datos, archivos xml, json,... )</p>
-            <p>Desarrollo de aplicaciones para moviles</p>
-            <p>Unity</p>
+        <div class="card">
+            <h6>Página realizada íntegramente con código: PHP, JavaScript, HTML y CSS</h6>
+        </div>
+
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Que se hacer? <i class="fas fa-graduation-cap"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>Diseño y desarrollo de paginas WEB FrontEnd y BackEnd (PHP, HTML, CSS, JavaScript, XML, JSON)</li>
+                            <li>Administrador de Sistemas Unix (HPUX, Linux, Debian, Ubuntu, ... ), utilizo mucho la Shell Script para automatización de tareas.</li>
+                            <li>Programación Orientada a objetos con Java</li>
+                            <li>JavaDoc, UML, Desarrollo de interfaces con Java Swing</li>
+                            <li>Bases de datos: Diseño y normalización de Bases de datos, sentencias SQL</li>
+                            <li>Sistemas de Gestion Empresarial - ERPs y CRMs</li>
+                            <li>Empresa e iniciativa emprendedora</li>
+                            <li>DevOps</li>
+                            <li>Robótica con arduino</li>
+                            <li>Organización y proyectos de de energia solar fotovoltaica</li>
+                            <li>Administración y diseño de redes departamentales</li>
+                            <li>Otras herramientas: Wordpress, Photoshop</li>
+                            <li>👨‍💻 Puedes encontrar mis proyectos en la pestaña repositorios de <a href="https://github.com/tatvil?tab=repositories">Github</a></li>
+                            <li>Desarrollo de Aplicaciones Multiplataforma (DAM)</li>
+                            <li>Programacion de Servicios y procesos(comunicacion de procesos cliente servidor, REST)</li>
+                            <li>Acceso a datos desde Java (Bases de datos, archivos xml, json,... )</li>
+                            <li>Desarrollo de aplicaciones para moviles con Android Studio</li>
+                            <li>Unity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer">
+            <span id="copyright">
+                &copy; <span id="annoFooter"></span> Tatiana Villa Ema
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        // Actualizar el año en el footer
+        document.getElementById('annoFooter').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
