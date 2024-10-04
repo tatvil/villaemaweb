@@ -14,7 +14,7 @@ function inicializarVariables() {
     document.getElementById("menu1").innerHTML = "<a href='index.html'>Inicio</a>";
     document.getElementById("menu2").innerHTML = "<a href='sobre-mi.html'>Sobre mí</a>";
     document.getElementById("menu3").innerHTML = "<a href='proyectos.html'>Proyectos</a>";
-    document.getElementById("menu4").innerHTML = "<a href='habilidades.html'>Habilidades</a>";
+    document.getElementById("menu4").innerHTML = "<a href='curriculum.html'>Curriculum</a>";
     document.getElementById("menu5").innerHTML = "<a href='contacto.html'>Contacto</a>";
 
     // Corregido para usar innerHTML

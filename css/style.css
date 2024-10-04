@@ -8,7 +8,7 @@
 :root {
     --color-fondo: #f4f4f4; /* Color de fondo claro */
     --color-primario: #007dc3; /* Color principal */
-    --color-secundario: #333; /* Texto oscuro */
+    --color-secundario: #1a3668; /* Texto oscuro */
     --color-acento: #ff9900; /* Color de acento */
 }
 
@@ -24,8 +24,12 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-secundario);
     line-height: 1.6; /* Mejoramos la legibilidad */
+    min-height: 100vh; /* La altura mínima del body es igual a la altura total de la ventana */
+    display: flex;
+    flex-direction: column;
 }
 
+/* Ajustes de encabezado */
 h1, h2, h6 {
     color: var(--color-primario);
 }
@@ -40,8 +44,12 @@ a {
     background-color: var(--color-primario);
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; /* Asegura que la cabecera esté siempre visible */
 }
 
 .cabecera img {
@@ -50,10 +58,9 @@ a {
     max-height: 150px; /* Altura máxima de la imagen */
 }
 
-.cabecera h1,
-.cabecera h2,
-.cabecera h3 {
+.cabecera h1, .cabecera h2, .cabecera h3 {
     margin: 0;
+    color: white;
 }
 
 .cabecera h1 {
@@ -66,15 +73,20 @@ a {
 
 .cabecera h3 {
     font-size: 1rem;
-    opacity: 0.8; /* Añadimos un poco de transparencia */
+    opacity: 0.8;
 }
 
 /* Estilo del menú */
 .menu {
     background-color: var(--color-primario);
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    position: sticky; /* Cambiamos a sticky */
+    top: 0;
+    z-index: 999;
 }
 
 .menu ul {
@@ -91,40 +103,53 @@ a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s; /* Transición para un efecto suave */
+    transition: color 0.3s;
 }
 
 .menu ul li a:hover {
-    color: var(--color-acento); /* Cambiamos el color al pasar el mouse */
+    color: var(--color-acento);
 }
 
 /* Estilo del cuerpo */
 .cuerpo {
-    max-width: 800px; /* Limitar el ancho del contenido */
-    margin: 50px auto; /* Centramos el cuerpo */
+    max-width: 800px; 
+    margin: 150px auto 50px auto; /* Ajustamos el margen superior para evitar superposición */
     padding: 20px;
-    background: #fff; /* Fondo blanco para el cuerpo */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: var(--color-primario);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
-footer #copyright {
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el copyright */
+/* Estructura básica para el layout */
+html {
+    height: 100%; /* Aseguramos que ocupe toda la altura del viewport */
 }
 
 body {
-    background-color: #f8f9fa;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido debe crecer para ocupar el espacio restante */
+.container {
+    flex: 1;
+    width: 100%;
+}
+
+/* Footer que siempre estará al fondo de la página */
+footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Esto asegura que el footer esté siempre al final */
+}
+
+footer #copyright {
+    font-size: 0.9rem;
 }
 
 .accordion-button {
@@ -142,6 +167,65 @@ body {
     cursor: pointer;
 }
 
+/* Footer estilo adicional */
 .footer span {
     display: block;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 30px; /* Espacio a la izquierda */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -30px; /* Ubicación del icono */
+    background: var(--color-primario);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skills {
+    margin: 2rem 0;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: #a4d7f4;
+    border-radius: .25rem;
+}
+
+.progress-bar {
+    height: 1rem;
+    background-color: #0054a4; /* Color de la barra de progreso */
+}
+
+.float-right {
+    float: right;
 }
