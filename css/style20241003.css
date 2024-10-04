@@ -1,0 +1,122 @@
+/* Importa la fuente */
+@font-face {
+    font-family: 'Gotham'; /* Nombre que le das a tu fuente */
+    src: url('../fonts/gotham/gothammedium.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+
+@font-face {
+    font-family: "Antropos"; /* Nombre que le das a tu fuente */
+    src: url("../fonts/antropos/antrf.ttf") format("truetype"); /* Ruta a tu archivo de fuente */
+}
+
+/* Variables de color */
+:root {
+    --color-oscuro: #0054a4;
+    --color-medio: #007dc3;
+    --color-claro: #a4d7f4;
+    --color-secundario: #ff9900;
+    --color-secundario-claro: #ffc24a;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', 'Antropos', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--color-claro);
+    color: var(--color-oscuro);
+}
+
+/* Estilo de la cabecera */
+.cabecera {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cabecera img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Altura máxima de la imagen */
+}
+
+.cabecera h1,
+.cabecera h2,
+.cabecera h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Asegura que el texto esté por encima de la imagen */  
+        color: var(--color-claro);     
+    }
+
+.cabecera h1 {
+        font-size: 32px;
+        color: var(--color-claro);
+        top: 10%;
+      }
+      
+.cabecera h2 {
+        font-size: 20px;
+        color: var(--color-claro);
+        top: 15%;
+      }    
+
+.cabecera h3 {
+        font-size: 16px; /* Tamaño de fuente del subtítulo */
+        color: var(--color-claro); /* Color del subtítulo */
+        top: 20%; /* Ajusta la posición vertical del subtítulo */
+        left:80%;
+    }
+
+/* Estilo del menú */
+.menu {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: var(--color-claro); /* Color del enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del cuerpo */
+.cuerpo {
+    margin-top: 50px; /* Margen superior para evitar que el contenido se superponga al menú */
+    padding: 20px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

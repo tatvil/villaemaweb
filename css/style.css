@@ -1,12 +1,12 @@
 /* Importa la fuente */
 @font-face {
-    font-family: 'Gotham'; /* Nombre que le das a tu fuente */
-    src: url('../fonts/gotham/gothammedium.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/gothammedium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Antropos"; /* Nombre que le das a tu fuente */
-    src: url("../fonts/antropos/antrf.ttf") format("truetype"); /* Ruta a tu archivo de fuente */
+    font-family: 'Antropos';
+    src: url('../fonts/antropos/antrf.ttf') format('truetype');
 }
 
 /* Variables de color */
@@ -24,99 +24,142 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gotham', 'Antropos', Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-claro);
     color: var(--color-oscuro);
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Estilo de la cabecera */
+/* Cabecera */
 .cabecera {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 .cabecera img {
     width: 100%;
-    height: auto;
-    max-height: 150px; /* Altura máxima de la imagen */
+    max-height: 150px;
+    object-fit: cover;
 }
 
-.cabecera h1,
-.cabecera h2,
-.cabecera h3{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Asegura que el texto esté por encima de la imagen */  
-        color: var(--color-claro);     
-    }
-
 .cabecera h1 {
-        font-size: 32px;
-        color: var(--color-claro);
-        top: 10%;
-      }
-      
+    font-size: 32px;
+    color: var(--color-claro);
+    margin-bottom: 10px;
+}
+
 .cabecera h2 {
-        font-size: 20px;
-        color: var(--color-claro);
-        top: 15%;
-      }    
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 
 .cabecera h3 {
-        font-size: 16px; /* Tamaño de fuente del subtítulo */
-        color: var(--color-claro); /* Color del subtítulo */
-        top: 20%; /* Ajusta la posición vertical del subtítulo */
-        left:80%;
-    }
+    font-size: 16px;
+    margin-bottom: 0;
+}
 
-/* Estilo del menú */
+/* Menú */
 .menu {
     background-color: var(--color-oscuro);
-    color: var(--color-claro);
     text-align: center;
     padding: 10px 0;
 }
 
 .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .menu ul li {
-    display: inline;
-    margin-left: 20px;
+    display: inline-block;
 }
 
 .menu ul li a {
-    color: var(--color-claro); /* Color del enlace */
+    color: var(--color-claro);
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu ul li a:hover {
-    text-decoration: underline;
+    background-color: var(--color-secundario);
+    color: white;
+    border-radius: 5px;
 }
 
-/* Estilo del cuerpo */
+/* Cuerpo */
 .cuerpo {
-    margin-top: 50px; /* Margen superior para evitar que el contenido se superponga al menú */
-    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
-/* Estilo del pie de página */
+.cuerpo .parrafo {
+    margin-bottom: 30px;
+}
+
+.cuerpo h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-oscuro);
+}
+
+.cuerpo p,
+.cuerpo ul {
+    font-size: 16px;
+    color: var(--color-medio);
+    margin-bottom: 15px;
+}
+
+.cuerpo ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Pie de página */
 footer {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+    padding: 15px 0;
+    position: relative;
     width: 100%;
+}
+
+footer span {
+    font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cuerpo {
+        padding: 0 10px;
+    }
+
+    .cabecera h1 {
+        font-size: 24px;
+    }
+
+    .cabecera h2 {
+        font-size: 18px;
+    }
+
+    .cabecera h3 {
+        font-size: 14px;
+    }
 }
