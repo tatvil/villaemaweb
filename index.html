@@ -22,7 +22,7 @@
         <div class="text-center mt-5">
             <h1>Tatiana Villa</h1>
             <h2><small>Desarrollador de aplicaciones Multiplataforma</small></h2>
-            <div>
+            <div id="fecha">fecha<div>
                 <a href="mailto:tatiana@villaema.es"><i class="fas fa-envelope"></i> tatiana@villaema.es</a> | 
                 <a href="https://github.com/tatvil"><i class="fab fa-github"></i> GitHub</a> | 
                 <a href="https://www.linkedin.com/in/tatvil/"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -33,7 +33,7 @@
             <ul>
                 <li><a id="menu1" href='index.html'>Inicio</a></li>
                 <li><a id="menu2" href="sobre-mi.html">Sobre mi</a></li>
-                <li><a id="menu3" href="proyectos.html">Proyectos</a></li>
+                <li><a id="menu3" href="proyectos.html">pepe</a></li>
                 <li><a id="menu4" href="habilidades.html">Habilidades</a></li>
                 <li><a id="menu5" href="contacto.html">Contacto</a></li>
             </ul>
@@ -109,27 +109,36 @@
                 </div>
             </div>
 
-        <div class="parrafo">
-            <h3>Conoce mi experiencia y formación en LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/tatvil/?tab">LinkedIn</a>
-        </div>
-
-        <div class="parrafo">
-            <h3><a href="contacto.html">Contacto</a></h3>
-            <p>📫 Puedes contactar conmigo mediante correo electrónico <a href="mailto:tatiana@villaema.es">tatiana@villaema.es</a></p>
-            <p>Puedes dejarme un mensaje en mi <a href="https://www.linkedin.com/in/tatvil/?tab">LinkedIn</a></p>
-            <p>Deja tus datos en el formulario de <a href="contacto.html">contacto</a></p>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Contacto <i class="fas fa-envelope"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>📫 Puedes contactar conmigo mediante correo electrónico <a href="mailto:tatiana@villaema.es">tatiana@villaema.es</a></p>
+                        <p>Puedes dejarme un mensaje en mi <a href="https://www.linkedin.com/in/tatvil/">LinkedIn</a></p>
+                        <p>Deja tus datos en el formulario de <a href="contacto.html">contacto</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-<footer>
-    <div class="footer">
-        <span>Página realizada íntegramente con código: PHP, JavaScript, HTML y CSS</span>
-        <span id="copyright">
-			&copy; <span id="annoFooter"> </span>Tatiana Villa Ema
-		</span>
-    </div>
-</footer>
+    <footer>
+        <div class="footer">
+            <div>Página realizada íntegramente con código: PHP, JavaScript, HTML y CSS</div>
+            <div id="copyright">copyright</div>
+        </div>
+    </footer>
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
