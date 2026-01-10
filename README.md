@@ -30,6 +30,10 @@ El objetivo es crear una plataforma moderna, responsive y optimizada para ofrece
 ---
 
 ## 📂 Estructura del proyecto
+
+# 📂 Estructura del proyecto
+
+```plaintext
 villaemaweb/
 ├── index.html        # Página principal
 ├── css/              # Estilos CSS
@@ -37,6 +41,7 @@ villaemaweb/
 ├── img/              # Imágenes y recursos gráficos
 ├── php/              # Scripts del lado del servidor
 └── README.md         # Documentación del proyecto
+```
 
 ---
 
@@ -44,7 +49,9 @@ villaemaweb/
 
 1. **Clona el repositorio**:
 
- >>  git clone https://github.com/tatvil/villaemaweb.git
+```plaintext
+   git clone https://github.com/tatvil/villaemaweb.git
+```
 
 Configura el entorno local:
 
@@ -52,7 +59,10 @@ Instala https://www.apachefriends.org/es/index.html o cualquier servidor con sop
 Copia los archivos en la carpeta htdocs (o equivalente).
 
 Accede desde el navegador:
->> http://localhost/villaemaweb/
+```plaintext
+ http://localhost/villaemaweb/
+```
+
 
 
 
